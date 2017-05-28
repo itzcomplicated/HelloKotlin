@@ -3,11 +3,11 @@
  */
 package  kotlintest
 
-fun main (args : Array<String>){
+fun main (args : Array<String>) {
 
     //No Semi colons
     //Immutable
-    val name = "Arun"
+    val name = "Sara"
     //Mutable
     var message = "Hi"
     println(message + " " + name)
@@ -56,9 +56,14 @@ fun main (args : Array<String>){
     println("minFloat $minFloat")
 
 
+    //Char and Boolean
+    val charA: Char = 'Z'
+    //is and !is Operators for Type Checks
+    println("$charA is a Char ${charA is Char}")
 
-
-
-
-
+    //Smart Type Checks
+    val someString = "Sample String"
+    if (someString is String) {
+        print("Length is " + someString.length) // someString is automatically cast to String
+    }
 }
