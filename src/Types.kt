@@ -76,10 +76,22 @@ fun main (args : Array<String>) {
     var bolVal:Boolean = true
     println("Boolean true to String " + bolVal.toString())
 
+    //String
+    val singleLineString = "Single Line String"
+    println(singleLineString)
 
+    val multiLineString = """ Multi Line String
 
+                            is awesome"""
+    println(multiLineString)
 
+    var varyingString= " some "
 
+    println("var string can vary  this : " + varyingString)
+
+    varyingString= " :) some thing else  "
+
+    println(" to : " + varyingString)
 
     println("The End")
 }
