@@ -104,8 +104,18 @@ fun main (args : Array<String>) {
     println("By string interpolation")
     println( " $first  $second")
 
+    //Equal and Compare To
+    println("A equal B :  ${"A".equals("B")}" )
+    println("A compare To B :  ${"A".compareTo("B")}" )
+
+    println("A equal A :  ${"A".equals("A")}" )
+    println("A compare To A :  ${"A".compareTo("A")}" )
 
 
+    println("A equal a :  ${"A".equals("a")}" )
+    println("A compare To a :  ${"A".compareTo("a")}" )
+
+    println("B compare To A :  ${"B".compareTo("A")}" )
 
     println("The End")
 }
