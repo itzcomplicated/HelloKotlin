@@ -93,5 +93,19 @@ fun main (args : Array<String>) {
 
     println(" to : " + varyingString)
 
+    //concatenation
+    val first = "First"
+    val second = "second"
+
+    val combined  = first + " " + second
+    println( " combine String " + combined)
+
+    //Interpolation
+    println("By string interpolation")
+    println( " $first  $second")
+
+
+
+
     println("The End")
 }
