@@ -64,6 +64,22 @@ fun main (args : Array<String>) {
     //Smart Type Checks
     val someString = "Sample String"
     if (someString is String) {
-        print("Length is " + someString.length) // someString is automatically cast to String
+        println("Length is " + someString.length) // someString is automatically cast to String
     }
+
+    //Type conversion
+    var numberTest:Number = 50
+    println("Number 50 to Char " + numberTest.toChar())
+
+    println("Char A to number " + ('A'.toInt()))
+
+    var bolVal:Boolean = true
+    println("Boolean true to String " + bolVal.toString())
+
+
+
+
+
+
+    println("The End")
 }
